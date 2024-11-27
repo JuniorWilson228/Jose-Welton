@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEF - jose welton</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+            header .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                nav a:hover {
+                    background-color: #003d7a;
+                }
+
+        .main-content {
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: url('https://u1.padletusercontent.com/uploads/padlet-uploads/2631925761/bf18c2e3257e8e24ff79dcbd405679fe/WhatsApp_Image_2024_11_26_at_11_47_28.jpeg?token=PiA_xwO3z4VgsiuT5xSaagYn7BLZ6NlxR3qMANG7a-l9chdzIsmIKA3YyddkZN_-HPWM5wlH4a-vNPhgC6amAF5SIFUhY6dAOBciPzxZqEiH-F25LQ9oZTBBYdubFfGmxfiLx7JOa9_iPAGUis4h62M3rXQOdgUfuUR9XWTbJNHbh4g_tzvJakSxMtzc9ekdWm1L26wNrvYJHBRXCjnzy2NvV0Eb4G_N4fAJk8z0w0mWY8rlcATmaayAIdube0dBP5iSnfOqvN5-tECPMdPAhA==') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+            .hero h1 {
+                margin: 0;
+                font-size: 3em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+        section {
+            margin: 40px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .info-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .info-card h3 {
+                margin: 15px 0;
+                color: #0056b3;
+            }
+
+            .info-card p {
+                padding: 0 15px 15px;
+            }
+
+            .info-card:hover {
+                transform: scale(1.03);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+                .hero h1 {
+                    font-size: 2.5em;
+                }
+
+                .hero p {
+                    font-size: 1em;
+                }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">EEF</div>
+            <nav>
+
+                <a href="index.html">INICIO</a>
+                <a href="jogos.html">JOGOS</a>
+           
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section id="home" class="hero">
+            <h1>Bem-vindo à Escola Jose Welton</h1>
+            <p>Excelência em Educação Fundamental</p>
+        </section>
+
+        <section id="about">
+            <h2>Jogos educativos </h2>
+            <p></p> Ajudam a desenvolver habilidades cognitivas, como resolução de problemas e pensamento crítico, de forma divertida e envolvente.</p>
+        </section>
+
+        <section id="facilities">
+            <h2>Alunos do 5º ano</h2>
+            <div class="info-grid">
+                <article class="info-card">
+                  <a href="https://kahoot.it/challenge/?quiz-id=e414c3fc-6b58-4ace-bc7b-806d4434b2a3&single-player=true" > <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/o-que-portugues-565da4839a1e9.jpg" alt="Edifício Principal"></a> 
+                    <h3>substantivo, artigo, adjetivo, comparativo</h3>
+                    <p>Atividades para alunos do 5º ano</p>
+                </article>
+
+                <article class="info-card">
+                    <a href="https://kahoot.it/challenge/?quiz-id=6dfc3086-2189-493c-8a5b-2c650965823d&single-player=true" > <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/o-que-portugues-565da4839a1e9.jpg" alt="Edifício Principal"></a> 
+                      <h3>frase, palavra, verbo, escrita</h3>
+                      <p>Atividades para alunos do 5º ano</p>
+                  </article>
+
+                  <article class="info-card">
+                    <a href="https://kahoot.it/challenge/?quiz-id=a473ee2c-d8dc-4ffb-a6a6-6ca5fd5001b9&single-player=true" > <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/o-que-portugues-565da4839a1e9.jpg" alt="Edifício Principal"></a> 
+                      <h3>função dos adjetivos, Identificação de tipos de frases, Classificação de palavras, Identificação de modos verbais</h3>
+                      <p>Atividades para alunos do 5º ano</p>
+                  </article>
+  
+  
+            </div>
+
+        </section>
+    </div>
+
+
+                <footer>
+                    <p>&copy; 2024 Escola Estadual de Educação Profissional (EEEP). Página produzida por Natyanne.</p>
+                </footer></body>
+                </html>

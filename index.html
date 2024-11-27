@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEF - jose welton</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+            header .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+                nav a:hover {
+                    background-color: #003d7a;
+                }
+
+        .main-content {
+            padding: 80px 20px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            background: url("https://u1.padletusercontent.com/uploads/padlet-uploads/2631925761/bf18c2e3257e8e24ff79dcbd405679fe/WhatsApp_Image_2024_11_26_at_11_47_28.jpeg?token=PiA_xwO3z4VgsiuT5xSaagYn7BLZ6NlxR3qMANG7a-l9chdzIsmIKA3YyddkZN_-HPWM5wlH4a-vNPhgC6amAF5SIFUhY6dAOBciPzxZqEiH-F25LQ9oZTBBYdubFfGmxfiLx7JOa9_iPAGUis4h62M3rXQOdgUfuUR9XWTbJNHbh4g_tzvJakSxMtzc9ekdWm1L26wNrvYJHBRXCjnzy2NvV0Eb4G_N4fAJk8z0w0mWY8rlcATmaayAIdube0dBP5iSnfOqvN5-tECPMdPAhA==") no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+            .hero h1 {
+                margin: 0;
+                font-size: 3em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+        section {
+            margin: 40px 0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .info-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .info-card h3 {
+                margin: 15px 0;
+                color: #0056b3;
+            }
+
+            .info-card p {
+                padding: 0 15px 15px;
+            }
+
+            .info-card:hover {
+                transform: scale(1.03);
+                box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            }
+
+        footer {
+            background-color: #0056b3;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero {
+                padding: 60px 20px;
+            }
+
+                .hero h1 {
+                    font-size: 2.5em;
+                }
+
+                .hero p {
+                    font-size: 1em;
+                }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">EEF</div>
+            <nav>
+
+                <a href="index.html">INICIO</a>
+                <a href="jogos.html">JOGOS</a>
+           
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section id="home" class="hero">
+            <h1>Bem-vindo à Escola Jose Welton</h1>
+            <p>Excelência em Educação Fundamental</p>
+        </section>
+
+        <section id="about">
+            <h2>Sobre a Escola</h2>
+            <p> Escola (EEF) é uma instituição dedicada ao ensino de alta qualidade, que preparam nossos alunos para o ensino médio.</p>
+        </section>
+
+        <section id="facilities">
+            <h2>Nossas Instalações</h2>
+            <div class="info-grid">
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2631925761/bf18c2e3257e8e24ff79dcbd405679fe/WhatsApp_Image_2024_11_26_at_11_47_28.jpeg?token=PiA_xwO3z4VgsiuT5xSaagYn7BLZ6NlxR3qMANG7a-l9chdzIsmIKA3YyddkZN_-HPWM5wlH4a-vNPhgC6amAF5SIFUhY6dAOBciPzxZqEiH-F25LQ9oZTBBYdubFfGmxfiLx7JOa9_iPAGUis4h62M3rXQOdgUfuUR9XWTbJNHbh4g_tzvJakSxMtzc9ekdWm1L26wNrvYJHBRXCjnzy2NvV0Eb4G_N4fAJk8z0w0mWY8rlcATmaayAIdube0dBP5iSnfOqvN5-tECPMdPAhA==" alt="Edifício Principal">
+                    <h3>Edifício Principal</h3>
+                    <p>O coração da escola, onde se encontram as salas de aula</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2677548345/98297db6fb38a878b6d4e4197a71a191/biblioteca.jpeg?token=KM7OAopQo7z1iaeipE8Pi6Jj3bLRpGBWsQfUxm_ZfCkP-hKQQHg9eCdvdU5NrtvnRVD-ajJ0I6XWAPk8STbeNr5Sd80iC8EqeC_SyUYFtSIjLOEjuS-H962wYpf1nieV_bxCHZFH1zkH9YoFZ5xCLgF8tb3kJfBlVShnl-U4YnxsRtxx4Fci_uiWrigTXcNy7yKKBh-5iqvsv8rNbESExTWUqiT0KizDVsvTj1uVjn4A4JEQwLXMtzvQANMPcOse" alt="Biblioteca">
+                    <h3>Biblioteca</h3>
+                    <p>Um espaço moderno para leitura e pesquisa, com uma vasta coleção de livros</p>
+                </article>
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2631925761/0410c03fce8e97bf461b8928a7f63619/WhatsApp_Image_2024_11_26_at_10_56_08.jpeg?token=PiA_xwO3z4VgsiuT5xSaagYn7BLZ6NlxR3qMANG7a-l9chdzIsmIKA3YyddkZN_-HPWM5wlH4a-vNPhgC6amAF5SIFUhY6dAOBciPzxZqEiH-F25LQ9oZTBBYdubFfGmPXmvQV0NZyqBI5n3PvwFb3Cn4xpOBLu_Drg97ICfMBQkKs8Qpz9FYS1lV6X67CIFCkuFiF5hWm_YcoOamiVbsVwXU5tL4XK963XM0gvSefPBNAHREep-qE5RSUqNWWseehK05n9mOtJ1TPDjNY6P3A==">
+                    <h3>Auditório</h3>
+                    <p>Espaço da escola utilizado para apresentações de projetos internos e externos da escola, apresentações de alunos para alunos.</p>
+                </article>
+               
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2631925761/c3a46f440c64ed739dbb0a0d50fd4092/WhatsApp_Image_2024_11_26_at_11_25_23__1_.jpeg?token=PiA_xwO3z4VgsiuT5xSaagYn7BLZ6NlxR3qMANG7a-l9chdzIsmIKA3YyddkZN_-HPWM5wlH4a-vNPhgC6amAF5SIFUhY6dAOBciPzxZqEiH-F25LQ9oZTBBYdubFfGm91VHATh7Bp_iGPEPm2-xtyVYCdUvxd5DyIukEePPXPGo9jYfzQbNzBLQbt5VxNEZwVXXtrrPphCnBANm0j5bjrftxM-2Ke-RqR-rcAlMZZEkr8CtKATUysC8grTpj0jzQnLBZy9JPnSw9ZLYvJZbPpfwVVtc7NwsCMNooQGFA2k=">
+                    <h3>Área de Lazer</h3>
+                    <p>Espaços para atividades ao ar livre.</p>
+                </article>
+               
+                <article class="info-card">
+                    <img src="https://u1.padletusercontent.com/uploads/padlet-uploads/2631925761/46f60062759ae3c524b3266babc0804b/WhatsApp_Image_2024_11_26_at_11_32_08.jpeg?expiry_token=5WaHZRdGG3LkUVQGy3SZ-zdRtq89aJeottSBaF_Hii8EGDVBG-vnLc5ZfL_2GiKosWMOCkHArMcc8LorETHcZw9Jw740jrRMEaovW7BqZuJCA10owkRh9NOJjtVknGXA5VqDQ5-cfvXVm7QN6jOk94moPIUWTxeV8K68fB-GTcZzTL6QDrDNlwRCAPHTXpAWUOfSMmwIu9V4NiVaiACBlKZ64RrA3vGzey-gBFs7ZawgsrIVvArkLaggFDWLXWwk">
+                    <h3>Sala de aula</h3>
+                    <p></p>um espaço para ensino, aprendizado e desenvolvimento de habilidades, onde professores e alunos interagem.</p>
+                </article>
+        
+              
+    
+
+
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+</html>
+<p>&copy; 2024 Escola de ensino fundamental (EEF) página produzida por natyanne </p>
+    </footer>
+</body>
+</html>
